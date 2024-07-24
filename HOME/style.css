@@ -1,0 +1,67 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*pesquisar border-box / https://colorhunt.co */
+    scroll-behavior: smooth;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    box-shadow: rgb(65, 112, 162) 0px 20px 30px -10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+a:hover
+{
+    color: rgb(90, 163, 241);
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 200ms linear;
+    text-decoration: underline;
+}
+
+.menu
+{
+    color: white;
+    background-color: #1A2130;
+}
+
+#section01
+{
+    background-color: #01204E;
+    height: 60vh;
+}
+
+#section02
+{
+    background-color: #028391;
+    height: 60vh;
+}
+
+#section03
+{
+    background-color: #F6DCAC;
+    height: 60vh;
+}
+
+#section04
+{
+    background-attachment: #FEAE6F;
+    height: 60vh;
+}
