@@ -9,13 +9,18 @@
     font-style: normal;
 }
 
+h2
+{
+    font-weight: bolder;
+}
+
 ul
 {
     list-style: none;
     display: flex;
     flex-direction: row;
     height: 80px;
-    box-shadow: rgb(65, 112, 162) 0px 20px 30px -10px;
+    box-shadow: #4170a2;
     justify-content: space-around;
     align-items: center;
 }
@@ -29,7 +34,7 @@ a
 
 a:hover
 {
-    color: rgb(90, 163, 241);
+    color: #4170a2;;
     font-weight: bold;
     letter-spacing: 1px;
     transition: all 200ms linear;
@@ -40,12 +45,79 @@ a:hover
 {
     color: white;
     background-color: #1A2130;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 #section01
 {
     background-color: #01204E;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
     height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+}
+
+.section01_div_left
+{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 999px;
+    overflow: hidden;
+    transition: all 200ms linear;
+    box-shadow: #4170a2 1px 1px 6px;
+    filter: drop-shadow(-1px -1px 6px);
+    
+}
+
+.section01_div_left:hover
+{
+    box-shadow: white 4px 4px 10px;
+    filter: drop-shadow(-4px -4px 10px);
+}
+
+.imagem_01
+{
+    width: auto; 
+    height: 320px;
+    filter: grayscale(100%);
+}
+
+.imagem_01:hover
+{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.section01_div_right
+{
+    height: 300px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.l01
+{
+    width: auto;
+    text-align: left;
+} 
+
+.p01
+{
+    width: auto;
+    text-align: left;
 }
 
 #section02
@@ -56,12 +128,112 @@ a:hover
 
 #section03
 {
-    background-color: #F6DCAC;
+    background: rgb(2,131,145);
+    background: linear-gradient(119deg, rgba(2,131,145,1) 15%, rgba(254,174,111,1) 100%);
+    /*background-color: #F6DCAC;*/
     height: 60vh;
+    display: flex;
+}
+
+.tarefa_left,
+.tarefa_right
+{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_03
+{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
 }
 
 #section04
 {
     background-attachment: #FEAE6F;
     height: 60vh;
+    display: flex;
+    padding: 80px;
+    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading_contact
+{
+    width: 100%;
+    text-align: center;
+}
+
+.contact_left
+{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+    box-shadow: black 0px 5px 15px;
+    border-radius: 10px;
+    gap: 0.2vw;
+    padding: 8px;
+}
+
+.contact_right
+{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+    box-shadow: black 0px 5px 15px;
+    border-radius: 10px;
+    gap: 2vw;
+    padding: 8px;
+}
+
+#nome
+{
+    margin-left: 33.5px;
+}
+
+.btn
+{
+    padding: 5px 15px
+}
+
+@media (width <= 600px)
+{
+    .section01_div_left
+    {
+        width: 200px; 
+        height: 200px;
+    }
+
+    .imagem_01
+    {
+        width: 200px; 
+        height: 200px;
+    }
+
+    .l01
+    {
+        width: auto;
+        text-align: center;
+    } 
+
+    .p01
+    {
+        width: auto;
+        text-align: center;
+    }
+
+    ul
+    {
+        gap: 2vw;
+        font-size: 16px;
+    }
 }

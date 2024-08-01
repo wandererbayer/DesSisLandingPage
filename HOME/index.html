@@ -27,7 +27,23 @@
 
         <main>
             <section id="section01">
-                <h2>Parte 01</h2>
+
+                <div class="section01_div_left">
+
+                    <img class="imagem_01" src="../HOME/assets/images/hoodie.webp" alt="imagem teste">
+
+                </div>
+
+                <div class="section01_div_right">
+
+                <h2 class="l01">Parte 01</h2><br>
+
+                <p class="p01">&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt consequuntur fuga hic eius provident officiis quo, 
+                    sapiente temporibus ut mollitia id nesciunt delectus optio cumque illo. Accusamus, debitis amet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Minus optio totam fugiat officiis fuga eligendi delectus velit? Est assumenda in, et, harum ullam eligendi a molestias autem veniam nostrum quasi!</p>
+
+                </div>
+
             </section>
 
             <section id="section02">
@@ -35,11 +51,65 @@
             </section>
 
             <section id="section03">
+
                 <h2>Parte 03</h2>
+
+                <div class="tarefa_left">
+
+                    <h3>Título</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto officia necessitatibus, 
+                        doloremque facilis optio porro distinctio voluptatem molestias maiores ipsum enim nulla velit aliquid totam animi ex. Adipisci, dicta soluta!</p>
+
+                </div>
+
+                <div class="tarefa_right">
+
+                    <img class="imagem_03" src="./assets/images/html_image.webp" alt="imagem_teste_2">
+
+                </div>
+
             </section>
 
             <section id="section04">
-                <h2>Parte 04</h2>
+
+                <div class="contact_left">
+
+                    <h2 class="heading_contact">CONTATO</h2>
+
+                    <div class="div_input">
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome">
+
+                    </div>
+
+                    <div class="div_input">
+
+                        <label for="mensagem">Mensagem:</label>
+                        <input type="text" id="mensagem">
+
+                    </div>
+
+                    <button class="btn" onclick="conferirMensagemWhatsApp()">Conferir  Mensagem</button>
+
+                </div>
+
+                <div class="contact_right">
+
+                    <div>
+
+                        <p>Nome: <span id="confNome"></span></p>
+                        <p>Mensagem: <span id="confMsg"></span></p>
+
+                    </div>
+
+                    <button class="btn" onclick="enviar()">WhatsApp</button>
+
+                </div>
+
+                
+
             </section>
 
         </main>
@@ -47,6 +117,7 @@
 
     </body>
 
+    <script src="./script.js"></script>
     <!-- pesquisar Daniel Snows / Dark Code -->
 
 </html>
