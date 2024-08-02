@@ -1,0 +1,24 @@
+<div class="big_box">
+
+                    <div class="box_top">
+                        <h2>Parte 02</h2>
+                    </div>
+
+                    <div class="box_bottom">
+                        <ul>
+                            <div class="li_left">
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/C.png" alt="Linguagem C">★☆☆☆☆</li>
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/c-.png" alt="Linguagem C++">★★☆☆☆</li>
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/java.png" alt="Java">★☆☆☆☆</li>
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/sql-server.png" alt="SQL">★★☆☆☆</li>
+                            </div>
+                            <div class="li_right">
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/html-5.png" alt="HTML">★★★☆☆</li>
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/css-3.png" alt="CSS">★★★☆☆</li>
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/js.png" alt="Javascript">★☆☆☆☆</li>
+                                <li class="item_02"><img class="icons_02" src="./assets/icons/python.png" alt="Python">★★☆☆☆</li>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
