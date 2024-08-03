@@ -24,3 +24,21 @@ function enviar()
 
     window.open(link, '_blank')
 }
+
+
+/* Desafio: Mudar Background-Image com Hover do Botão
+getElementById e getElementByClassName não funcionaram*/
+const button = document.querySelector('.btn_section03');
+const section = document.querySelector('#section03');
+
+// Começo do "Hover"
+button.addEventListener('mouseover', () => 
+    {
+        section.style.backgroundImage = 'url(./assets/images/blue_2.jpg)';
+    });
+
+// Fim do "Hover"
+button.addEventListener('mouseout', () => 
+    {
+        section.style.backgroundImage = 'url(./assets/images/blue_1.jpg)';
+    });

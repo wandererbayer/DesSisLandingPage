@@ -86,7 +86,6 @@ a:hover
     transition: all 200ms linear;
     box-shadow: #4170a2 1px 1px 6px;
     filter: drop-shadow(-1px -1px 6px);
-    
 }
 
 .section01_div_left:hover
@@ -134,6 +133,11 @@ a:hover
 #section02
 {
     background-color: #25B4ED;
+    background-image: url(./assets/images/Tech.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
     height: auto;
     width: 100%;
     padding-top: 80px;
@@ -146,6 +150,7 @@ a:hover
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    transform: translateZ(300px);
 }
 
 .wrap_tecs
@@ -159,6 +164,7 @@ a:hover
     text-align: center;
     padding: 50px;
     flex-wrap: wrap;
+    transform: translateZ(300px);
 }
 
 .wrap_tecs > div
@@ -167,48 +173,89 @@ a:hover
     /* From https://css.glass */
     background: rgba(65, 112, 162, 0.4);
     border-radius: 13px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
     border: 1px solid rgba(65, 112, 162, 0.21);
     padding: 3rem;
-
     box-shadow: 2px 2px 2px 0px #09233C;
     -webkit-box-shadow: 2px 2px 5px 0px #09233C;
-    -moz-box-shadow: 2px 2px 5px 0px #09233C);
+    -moz-box-shadow: 2px 2px 5px 0px #09233C;
+    perspective: 1200px;
 }
 
 .tec_icon
 {
     filter: drop-shadow(2px 2px 1px);
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 .stars
 {
     font-size: 2rem;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.tec_text
+{
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.tec_cards
+{
+    transform-style: preserve-3d; /* Preserva o estilo 3D dos filhos */
+    transition: transform 0.5s;
+}
+
+.tec_cards:hover
+{
+    transform: rotateX(2deg) rotateY(35deg);
+    box-shadow: 2px 2px 3px 2px black;
+    z-index: 1;
+}
+
+.tec_cards:hover .tec_icon
+{
+    transform: translateZ(80px) rotateY(25deg);
+    filter: drop-shadow(black 8px 8px 2px);
+}
+
+.tec_cards:hover .stars
+{
+    color: rgb(254, 165, 0);
+    transform: translateZ(50px) rotateY(20deg);
+    filter: drop-shadow(black 6px 6px 3px);
+}
+
+.tec_cards:hover .tec_text
+{
+    transform: translateZ(15px) rotateY(2deg);
+    text-shadow: black 1px 1px 2px;
 }
 
 /* ----------------------------------------------------------------------- SECTION 3*/
 #section03
 {
-    background-image: url(./assets/images/coding.jpg);
+    background-image: url(./assets/images/blue_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
     width: 100%;
+    position: relative;
     justify-content: center;
     text-align: center;
     align-content: center;
     color: white;
     padding: 100px;
-    padding-top: 80px;
+    padding-top: 150px;
     padding-bottom: 80px;
-    font-weight:500;
+    font-weight: 500;
 }
 
 #section03 > h2
 {
     font-size: 2rem;
     letter-spacing: 4px;
+    filter: drop-shadow(black 2px 2px 3px);
 }
 
 .text_section03
@@ -236,55 +283,9 @@ a:hover
     background-color: transparent;
     border-color: white;
     color: white;
-    filter: drop-shadow(black 2px 2px 3px);
-}
-
-@keyframes gradient 
-{
-	0% 
-    {
-		background-position: 0% 50%;
-	}
-
-	50% 
-    {
-		background-position: 100% 50%;
-	}
-
-	100% 
-    {
-		background-position: 0% 50%;
-	}
-}
-
-.tarefa_left
-{
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-.btn_section03
-{
-    width: 250px;
-}
-
-.tarefa_right
-{
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-
-.imagem_03
-{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    box-shadow: black 2px 2px 3px;
+    padding: 5px 15px;
+    border-radius: 8px;
 }
 
 /* ----------------------------------------------------------------------- SECTION 4*/
@@ -298,7 +299,6 @@ a:hover
     gap: 8vw;
     align-items: center;
     justify-content: center;
-
 }
 
 .heading_contact
@@ -365,6 +365,7 @@ a:hover
 {
     padding: 5px 15px;
     border-radius: 8px;
+    width: 285px;
 }
 
 .btn:hover
@@ -378,8 +379,8 @@ a:hover
 .btn_Msg
 {
     margin-top: 15px;
+    align-self: center;
 }
-
 
 /* ----------------------------------------------------------------------- Footer*/
 footer
